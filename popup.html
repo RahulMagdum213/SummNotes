@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Summarizer</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="logo">✨</div>
+
+            <div>
+                <h2>SummNotes-AI Summarizer</h2>
+                <p>Summarize selected text instantly</p>
+            </div>
+        </div>
+
+        <div class="status-card">
+            <span id="statusIcon">📝</span>
+            <span id="status">Select some text on a webpage.</span>
+        </div>
+
+        <button id="summarizeBtn">
+            ✨ Summarize
+        </button>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <span>Gemini is summarizing...</span>
+        </div>
+
+        <div id="resultCard" class="result-card hidden">
+
+            <div class="result-header">
+                <strong>📄 Summary</strong>
+            </div>
+
+            <div id="result"></div>
+
+            <div class="actions">
+
+                <button id="copyBtn">
+                    📋 Copy
+                </button>
+
+                <button id="clearBtn">
+                    🗑️ Clear
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>
